@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imgdashboardmenu"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092"
+            app:srcCompat="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/textViewInterac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:text="Interac"
+            android:textColor="#2D3C8E"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewAboutus"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="20dp"
+            app:circularflow_radiusInDP="50dp"
+            app:layout_constraintEnd_toStartOf="@id/imageView5AcadCal"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInterac"
+            app:srcCompat="@drawable/about_us" />
+
+        <ImageView
+            android:id="@+id/imageView5AcadCal"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageViewAboutus"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInterac"
+            app:srcCompat="@drawable/acamedic_calendar" />
+
+        <TextView
+            android:id="@+id/textView6Aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="About us"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageViewAboutus"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="@id/imageViewAboutus"
+            app:layout_constraintTop_toBottomOf="@id/imageViewAboutus" />
+
+        <TextView
+            android:id="@+id/textView8Acacal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:text="Academic Calendar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/imageView5AcadCal"
+            app:layout_constraintTop_toBottomOf="@id/imageView5AcadCal" />
+
+        <ImageView
+            android:id="@+id/imageViewCampRes"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageViewAboutus"
+            app:layout_constraintStart_toStartOf="@id/imageViewAboutus"
+            app:layout_constraintTop_toBottomOf="@id/textView6Aboutus"
+            app:srcCompat="@drawable/campus_resources" />
+
+        <TextView
+            android:id="@+id/textViewCampres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Campus Resources"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageViewCampRes"
+            app:layout_constraintStart_toStartOf="@id/imageViewCampRes"
+            app:layout_constraintTop_toBottomOf="@id/imageViewCampRes" />
+
+        <ImageView
+            android:id="@+id/imageViewConPpl"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageView5AcadCal"
+            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintStart_toStartOf="@id/imageView5AcadCal"
+            app:layout_constraintTop_toBottomOf="@id/textView8Acacal"
+            app:srcCompat="@drawable/connect_people1" />
+
+        <TextView
+            android:id="@+id/textViewConppl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Connect People"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageViewConPpl"
+            app:layout_constraintStart_toStartOf="@id/imageViewConPpl"
+            app:layout_constraintTop_toBottomOf="@id/imageViewConPpl" />
+
+        <ImageView
+            android:id="@+id/imageView8FC"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageViewCampRes"
+            app:layout_constraintStart_toStartOf="@id/imageViewCampRes"
+            app:layout_constraintTop_toBottomOf="@id/textViewCampres"
+            app:srcCompat="@drawable/food_courts" />
+
+        <TextView
+            android:id="@+id/textViewFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Food courts"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageView8FC"
+            app:layout_constraintStart_toStartOf="@id/imageView8FC"
+            app:layout_constraintTop_toBottomOf="@id/imageView8FC" />
+
+        <ImageView
+            android:id="@+id/imageViewEvents"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageViewConPpl"
+            app:layout_constraintStart_toStartOf="@id/imageViewConPpl"
+            app:layout_constraintTop_toBottomOf="@id/textViewConppl"
+            app:srcCompat="@drawable/events" />
+
+        <TextView
+            android:id="@+id/textView1Events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Events"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageViewEvents"
+            app:layout_constraintStart_toStartOf="@id/imageViewEvents"
+            app:layout_constraintTop_toBottomOf="@id/imageViewEvents" />
+
+        <ImageView
+            android:id="@+id/imageView18Org514"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageView8FC"
+            app:layout_constraintStart_toStartOf="@id/imageView8FC"
+            app:layout_constraintTop_toBottomOf="@id/textViewFC"
+            app:srcCompat="@drawable/organizations" />
+
+        <TextView
+            android:id="@+id/textView44Org514"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Organizations"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageView18Org514"
+            app:layout_constraintStart_toStartOf="@id/imageView18Org514"
+            app:layout_constraintTop_toBottomOf="@id/imageView18Org514" />
+
+        <ImageView
+            android:id="@+id/imageView19Snap514"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imageViewEvents"
+            app:layout_constraintStart_toStartOf="@id/imageViewEvents"
+            app:layout_constraintTop_toBottomOf="@id/textView1Events"
+            app:srcCompat="@drawable/snapshot" />
+
+        <TextView
+            android:id="@+id/textView45Snap514"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Snapshot"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageView19Snap514"
+            app:layout_constraintStart_toStartOf="@id/imageView19Snap514"
+            app:layout_constraintTop_toBottomOf="@id/imageView19Snap514" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/navbar_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>
