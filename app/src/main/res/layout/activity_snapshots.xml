@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/sr"
+    tools:context=".SnapshotsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewSnap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:text="Snapshots"
+            android:textColor="@color/teal_700"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewEmma"-->
+        <!--        android:layout_width="60dp"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:layout_marginEnd="300dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/textViewSnap"-->
+        <!--        app:srcCompat="@drawable/emma" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textViewEmma"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="20dp"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:text="Emma Everly"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewEmma"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/imageViewEmma" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageView1"-->
+        <!--        android:layout_width="350dp"-->
+        <!--        android:layout_height="150dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_marginEnd="25dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/imageViewEmma"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageViewEmma"-->
+        <!--        app:srcCompat="@drawable/snapshot3" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewHeart1"-->
+        <!--        android:layout_width="20dp"-->
+        <!--        android:layout_height="20dp"-->
+        <!--        android:layout_marginStart="50dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_marginEnd="300dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView1"-->
+        <!--        app:srcCompat="@drawable/like" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textViewLike1"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:text="321 Likes"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="15sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewHeart1"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView1" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewShare1"-->
+        <!--        android:layout_width="20dp"-->
+        <!--        android:layout_height="20dp"-->
+        <!--        android:layout_marginStart="150dp"-->
+        <!--        android:layout_marginTop="15dp"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewHeart1"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView1"-->
+        <!--        app:srcCompat="@drawable/share" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textViewShare1"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="15dp"-->
+        <!--        android:layout_marginEnd="70dp"-->
+        <!--        android:text="10 Shares"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="15sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewShare1"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView1" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewPaddu"-->
+        <!--        android:layout_width="60dp"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:layout_marginTop="225dp"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/imageViewEmma"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageViewEmma"-->
+        <!--        app:srcCompat="@drawable/padmavathi" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textViewPadmavathi"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="20dp"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:text="Padma Chowdary"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewPaddu"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/imageViewPaddu" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageView20"-->
+        <!--        android:layout_width="350dp"-->
+        <!--        android:layout_height="150dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_marginEnd="25dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/imageViewPaddu"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageViewPaddu"-->
+        <!--        app:srcCompat="@drawable/snapshot2" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewHeart2"-->
+        <!--        android:layout_width="20dp"-->
+        <!--        android:layout_height="20dp"-->
+        <!--        android:layout_marginStart="50dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_marginEnd="300dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView20"-->
+        <!--        app:srcCompat="@drawable/like" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView44"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:text="1021 likes"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewHeart2"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView20" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/imageViewShare2"-->
+        <!--        android:layout_width="20dp"-->
+        <!--        android:layout_height="20dp"-->
+        <!--        android:layout_marginStart="150dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewHeart2"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView20"-->
+        <!--        app:srcCompat="@drawable/share" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textViewShare2"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:text="26 Shares"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:textSize="15sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/imageViewShare2"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/imageView20" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"/>
+            <ImageView
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/imageupload"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="685dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="33dp"
+                android:layout_height="26dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/user"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="689dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/recyclerView"/>
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
